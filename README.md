@@ -1,4 +1,4 @@
-# Guess The Number!
+# Match The Icons!
 
 This is an app made in React with Expo, Tailwind
 
