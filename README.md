@@ -26,6 +26,10 @@ Must also be on your Github with title, overview, screenshot of each screen, and
 ## Screenshots
 
 <p>
+  <img src="https://github.com/kentlance/match-the-icons/blob/master/assets/images/Screenshots/homeScreen.png" alt="Home Screen" width="200" />
+  <img src="https://github.com/kentlance/match-the-icons/blob/master/assets/images/Screenshots/gameScreen.png" alt="Game Screen" width="200" />
+  <img src="https://github.com/kentlance/match-the-icons/blob/master/assets/images/Screenshots/wrongModal.png" alt="Wrong Modal" width="200" />
+  <img src="https://github.com/kentlance/match-the-icons/blob/master/assets/images/Screenshots/wonModal.png" alt="Won Modal" width="200" />
 </p>
 
 Home Screen
