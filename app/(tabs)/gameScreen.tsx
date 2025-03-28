@@ -116,8 +116,10 @@ const GameScreen = () => {
 
   const handleIconPress = (icon: IconState) => {
     if (selectedIcons.length === 0) {
+      // no icons are selected
       setSelectedIcons([{ id: icon.id, icon: icon.icon, key: icon.iconKey }]);
     } else if (selectedIcons.length === 1) {
+      // 2 icons are selected, check if they match
       setSelectedIcons([
         ...selectedIcons,
         { id: icon.id, icon: icon.icon, key: icon.iconKey },
@@ -144,6 +146,7 @@ const GameScreen = () => {
   };
 
   const handleWrongMatch = () => {
+    // the selected icons dont match
     const updatedIcons = shuffledIcons.map((icon) => {
       if (
         selectedIcons.find(
@@ -166,6 +169,7 @@ const GameScreen = () => {
   };
 
   const handleRestart = () => {
+    // game over, restart game
     setTurns(0);
     setMatches(0);
     setGameOver(false);

@@ -1,14 +1,16 @@
+// iconComponent for each icon card, reusable component
 import React, { useEffect, useState } from "react";
 import { Image, View, TouchableOpacity, StyleSheet } from "react-native";
 
 const unknown = require("../../assets/images/unknown.png");
+
 interface IconProps {
   iconKey: string;
   id: number;
   image: any;
   style?: any;
   onPress?: () => void;
-  visible: boolean; // Add this line
+  visible: boolean;
   matched?: boolean;
   shouldFlipBack: boolean;
   isSelected?: boolean;
@@ -27,6 +29,7 @@ const IconComponent = ({
   const [isFlipped, setIsFlipped] = useState(true);
   const [flipBack, setFlipBack] = useState(false);
 
+  // for gameScreen. Tells this component that it should flip back
   useEffect(() => {
     if (shouldFlipBack) {
       setIsFlipped(true);
@@ -43,6 +46,7 @@ const IconComponent = ({
     onPress && onPress();
   };
 
+  // default is unknown/hidden card
   return (
     <TouchableOpacity onPress={handlePress}>
       <View
